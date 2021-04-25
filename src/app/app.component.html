@@ -1,0 +1,6 @@
+<h1>Seminar <span>Registration</span></h1>
+<form #myForm="ngForm" action="#" method="post" class="form-container">
+  <step-1 #step1 (done)="onStepDone('step1')"></step-1>
+  <step-2 #step2 (done)="onStepDone('step2')" [enable]="step1Done"></step-2>
+  <step-3 #step3 (done)="onStepDone('step3')" [enable]="step2Done"></step-3>
+</form>

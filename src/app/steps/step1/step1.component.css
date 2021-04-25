@@ -1,0 +1,12 @@
+.step1-subtitle {
+  font-size: 1.7rem;
+  margin: 0;
+}
+
+.attendees-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow: hidden;
+}
+

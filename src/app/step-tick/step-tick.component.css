@@ -1,0 +1,9 @@
+.tick-container {
+  border-radius: 50%;
+  margin: 0.5rem;
+  padding: 1rem;
+  width: 4rem;
+  height: 4rem;
+  background: #B1FDAAFF;
+  box-shadow: inset 0 -3px 3px darkgrey;
+}

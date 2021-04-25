@@ -1,0 +1,10 @@
+<step-container id="step_3" title="Step 3" classes="step3" [disabled]="!enable">
+  <div>
+    <label for="rock" class="step-question">
+      Are you ready to rock?
+    </label>
+    <input #check type="checkbox" id="rock" (change)="onReadyToRock($event)">
+  </div>
+  <input type="submit" [disabled]="!readyToRock" id="submit_button" value="Complete Registration"
+         (click)="submit()">
+</step-container>

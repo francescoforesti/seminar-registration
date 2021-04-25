@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+.step-question {
+  font-size: 1.8rem;
+  font-style: italic;
+  font-family: serif;
+}
+
+p.step-question {
+  margin: 0;
+}
+
+.input-label {
+  font-style: italic;
+  font-family: serif;
+  font-size: 1.2em;
+}

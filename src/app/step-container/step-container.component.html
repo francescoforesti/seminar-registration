@@ -1,0 +1,8 @@
+<fieldset [id]='id' class="form-step {{classes}}" [ngClass]="{'opaque' : disabled}">
+  <legend class="step-legend">{{title}}</legend>
+  <ng-content></ng-content>
+  <fade-animation [show]="done" class="tick-container">
+    <step-tick></step-tick>
+  </fade-animation>
+</fieldset>
+<div class="glass" [hidden]="!disabled"></div>

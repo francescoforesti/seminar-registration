@@ -1,0 +1,21 @@
+<step-container id="step_1" title="Step 1" classes="step1" [done]="step1Done">
+  <div>
+    <label for="num_attendees" class="step-question">
+      How many people will be attending?
+    </label>
+    <select #attendeeSelect id="num_attendees" (change)="onSelectAttendees($event)">
+      <option *ngFor="let opt of attendeesNumberOpts"
+              [id]="opt.id"
+      >{{opt.label}}</option>
+    </select>
+  </div>
+  <div [@openClose]="!noAttendees ? 'open' : 'closed'" id="attendee_container" class="attendees-container">
+    <h3 class="step1-subtitle">Please provide full names:</h3>
+    <attendee-input *ngFor="let attendee of attendees; let i = index" [attr.data-index]="i"
+                    id="attendee_{{i+1}}"
+                    index="{{i+1}}"
+                    [attendee]="attendee"
+                    (nameChanged)="checkStepDone()"
+    ></attendee-input>
+  </div>
+</step-container>

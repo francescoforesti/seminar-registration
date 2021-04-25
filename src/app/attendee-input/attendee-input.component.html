@@ -1,0 +1,7 @@
+<div id="{{id}}_wrap">
+  <ng-content></ng-content>
+  <label [for]="id" class="input-label">
+    Attendee {{index}} Name:
+  </label>
+  <input type="text" [id]="id" [(ngModel)]="attendee.name" (ngModelChange)="onNameChanged()">
+</div>

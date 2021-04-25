@@ -1,0 +1,49 @@
+.form-step {
+  justify-self: center;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 2rem;
+}
+
+.step-legend {
+  background: white;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  font-size: 2rem;
+  padding: 0.5rem;
+}
+
+.glass {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 33vw;
+  z-index: 100;
+  background: transparent;
+}
+
+.step1 {
+  background: #A4E9BFFF;
+}
+
+.step2 {
+  background: #B5E9ED;
+}
+
+.step3 {
+  background: bisque;
+}
+
+.opaque {
+  opacity: 0.5;
+}
+
+.tick-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
